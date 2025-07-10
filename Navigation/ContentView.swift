@@ -11,9 +11,21 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("This is my root view")
+                Text("This is the Root View 🌳")
                 NavigationLink(destination: SecondView()) {
-                    Text("Click me!")
+                    Text("Home")
+                }
+                
+                NavigationLink(destination: ThirdView()) {
+                    Text("About Me")
+                }
+                
+                NavigationLink(destination: FourthView()) {
+                    Text("Contact")
+                }
+                
+                NavigationLink(destination: FifthView()) {
+                    Text("Help")
                 }
             }
         }
